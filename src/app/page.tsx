@@ -63,6 +63,14 @@ export default function Home() {
                 <li className="nav-item">
                   <a
                     className="nav-link text-decoration-none navbar-text-color"
+                    href="/Scan"
+                  >
+                    Scan
+                  </a>
+                </li>
+                <li className="nav-item">
+                  <a
+                    className="nav-link text-decoration-none navbar-text-color"
                     href="#About"
                   >
                     About
@@ -126,7 +134,7 @@ export default function Home() {
                   eiusm tempor incididunt ut labore et dolore magna aliqua.
                 </p>
                 <div className="banner-btn discover-btn-banner">
-                  <a href="/scan" className="text-decoration-none">
+                  <a href="/Scan" className="text-decoration-none">
                     Scan Website Now
                   </a>
                   <a href="" className="text-decoration-none play-button">
@@ -137,7 +145,7 @@ export default function Home() {
               <div className="social-icons" data-aos="zoom-out-left">
                 <ul className="list-unstyled">
                   <li>
-                    <a className="text-decoration-none" href="/scan">
+                    <a className="text-decoration-none" href="/Scan">
                       <i className="fa-regular fa-horizontal-rule" />
                     </a>
                   </li>
