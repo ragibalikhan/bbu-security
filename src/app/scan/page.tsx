@@ -1,9 +1,9 @@
 'use client'
 
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import Script from 'next/script'
 
-export default function scan() {
+export default function Scan() {
     const [websiteUrl, setWebsiteUrl] = useState('');
     const [scanResult, setScanResult] = useState(null);
     const [error, setError] = useState<string | null>(null);

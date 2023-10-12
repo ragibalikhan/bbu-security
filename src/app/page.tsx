@@ -790,7 +790,7 @@ export default function Home() {
                       aria-controls="collapseFive"
                     >
                       <h5 className="faq-btn-text">
-                        How Does Secuvant's Co-managed Security Model Work?
+                        How Does Secuvant&rsquo;s Co-managed Security Model Work?
                       </h5>
                     </a>
                   </div>
