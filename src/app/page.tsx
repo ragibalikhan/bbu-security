@@ -31,6 +31,7 @@ export default function Home() {
                 src="images/security-boost.png"
                 alt=""
                 className="img-fluid diverge-logo"
+                style={{ width: '50px', height: '50px' }}
               />
             </a>
             <button
