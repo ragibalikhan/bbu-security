@@ -130,7 +130,7 @@ export default function Home() {
                    Digital World, Safeguarding Your Business
                 </h1>
                 <p className="text-white banner-paragraph">
-                Cybersecurity Boost Up is your dedicated ally in the ever-evolving digital landscape. We're committed to elevating your security measures, offering innovative solutions to safeguard your data and assets.
+                Cybersecurity Boost Up is your dedicated ally in the ever-evolving digital landscape. We&quot;re committed to elevating your security measures, offering innovative solutions to safeguard your data and assets.
                 </p>
                 <div className="banner-btn discover-btn-banner">
                   <a href="/scan" className="text-decoration-none">
@@ -197,7 +197,7 @@ export default function Home() {
                   <div className="cards-outer outer-card1" data-aos="fade-up">
                     <h6 className="heading-background">virtual events</h6>
                     <p className="card-heading-p vertical-bar-line">
-                    Join us for an immersive virtual experience that transcends boundaries. Our virtual events offer a unique platform for networking, learning, and collaborating with industry leaders. Don't miss out on the opportunity to connect with peers, gain insights, and stay ahead of the curve. Mark your calendar for an unforgettable digital journey!
+                    Join us for an immersive virtual experience that transcends boundaries. Our virtual events offer a unique platform for networking, learning, and collaborating with industry leaders. Don&quot;t miss out on the opportunity to connect with peers, gain insights, and stay ahead of the curve. Mark your calendar for an unforgettable digital journey!
                     </p>
                     <p className="date-p">August 11, 2023</p>
                   </div>
@@ -346,7 +346,7 @@ export default function Home() {
             Why Choose Us
           </h3>
           <p className="text-center">
-          At Security Boost Up, we understand that the digital landscape is fraught with threats and vulnerabilities. That's why we're dedicated to being your trusted cybersecurity partner. 
+          At Security Boost Up, we understand that the digital landscape is fraught with threats and vulnerabilities. That&quot;s why we&quot;re dedicated to being your trusted cybersecurity partner. 
           </p>
         </div>
       </div>
@@ -446,7 +446,7 @@ export default function Home() {
               Provider
             </h3>
             <p className="security-services-p">
-            "Security Beyond Limits: We are your advanced cybersecurity provider, dedicated to safeguarding your digital assets with state-of-the-art solutions.
+            Security Beyond Limits: We are your advanced cybersecurity provider, dedicated to safeguarding your digital assets with state-of-the-art solutions.
             </p>
             <p className="security-services-p cyber-p-margin-bottom">
             Our cutting-edge technology and expert team offer unrivaled protection against the most sophisticated cyber threats, ensuring your peace of mind in an ever-evolving digital landscape.
@@ -750,7 +750,7 @@ export default function Home() {
                   >
                     <div className="card-body">
                       <p className="text-left accordian-text-color">
-                      Cybersecurity involves protecting your digital systems, networks, and data from cyber threats and attacks. It's crucial for your business to safeguard sensitive information, maintain customer trust, and prevent financial losses due to data breaches.
+                      Cybersecurity involves protecting your digital systems, networks, and data from cyber threats and attacks. It&quot;s crucial for your business to safeguard sensitive information, maintain customer trust, and prevent financial losses due to data breaches.
                       </p>
                     </div>
                   </div>
