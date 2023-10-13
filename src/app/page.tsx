@@ -28,7 +28,7 @@ export default function Home() {
           <nav className="navbar navbar-expand-lg navbar-light p-0">
             <a className="navbar-brand pt-0" href="/">
               <img
-                src="images/security-boost.png"
+                src="images/security-boost1.png"
                 alt=""
                 className="img-fluid diverge-logo"
                 // style={{ width: '50px', height: '50px' }}
@@ -63,7 +63,7 @@ export default function Home() {
                 <li className="nav-item">
                   <a
                     className="nav-link text-decoration-none navbar-text-color"
-                    href="/Scan"
+                    href="/scan"
                   >
                     Scan
                   </a>
@@ -134,7 +134,7 @@ export default function Home() {
                   eiusm tempor incididunt ut labore et dolore magna aliqua.
                 </p>
                 <div className="banner-btn discover-btn-banner">
-                  <a href="/Scan" className="text-decoration-none">
+                  <a href="/scan" className="text-decoration-none">
                     Scan Website Now
                   </a>
                   <a href="" className="text-decoration-none play-button">
@@ -145,7 +145,7 @@ export default function Home() {
               <div className="social-icons" data-aos="zoom-out-left">
                 <ul className="list-unstyled">
                   <li>
-                    <a className="text-decoration-none" href="/Scan">
+                    <a className="text-decoration-none" href="/scan">
                       <i className="fa-regular fa-horizontal-rule" />
                     </a>
                   </li>
@@ -1117,7 +1117,7 @@ export default function Home() {
               <figure>
                 <a href="/">
                   <img
-                    src="images/security-boost.png"
+                    src="images/security-boost1.png"
                     alt=""
                     className="img-fluid"
                   />
