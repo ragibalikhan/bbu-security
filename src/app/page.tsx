@@ -63,7 +63,7 @@ export default function Home() {
                 <li className="nav-item">
                   <a
                     className="nav-link text-decoration-none navbar-text-color"
-                    href="/scan"
+                    href="/Scan"
                   >
                     Scan
                   </a>
@@ -133,7 +133,7 @@ export default function Home() {
                 Cybersecurity Boost Up is your dedicated ally in the ever-evolving digital landscape. We&quot;re committed to elevating your security measures, offering innovative solutions to safeguard your data and assets.
                 </p>
                 <div className="banner-btn discover-btn-banner">
-                  <a href="/scan" className="text-decoration-none">
+                  <a href="/Scan" className="text-decoration-none">
                     Scan Website Now
                   </a>
                   <a href="" className="text-decoration-none play-button">
@@ -144,7 +144,7 @@ export default function Home() {
               <div className="social-icons" data-aos="zoom-out-left">
                 <ul className="list-unstyled">
                   <li>
-                    <a className="text-decoration-none" href="/scan">
+                    <a className="text-decoration-none" href="/Scan">
                       <i className="fa-regular fa-horizontal-rule" />
                     </a>
                   </li>
