@@ -30,13 +30,13 @@ export default function Scan() {
     
     return (
         <>
-        <Head>
+{/*         <Head>
         <link
         rel="apple-touch-icon"
         sizes="57x57"
         href="images/security-boost1.png"
     />
-        </Head>
+        </Head> */}
    <div className="home-header-section">
     <header className="header">
       <div className="main-header">
