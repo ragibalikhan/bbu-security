@@ -123,15 +123,14 @@ export default function Home() {
             <div className="col-lg-6 col-md-6 col-sm-12 mb-md-0 mb-4 text-md-left text-center">
               <div className="home-banner-text" data-aos="fade-up">
                 <h5 className="text-white artificial-text">
-                  Cyber Security Solutions for
+                Navigating the
                 </h5>
                 <h1 className="text-white">
                   {" "}
-                  Organizations with Critical Infrastructure
+                   Digital World, Safeguarding Your Business
                 </h1>
                 <p className="text-white banner-paragraph">
-                  Lorem ipsum dolor sit amet consectetur adipiscing elit sed do
-                  eiusm tempor incididunt ut labore et dolore magna aliqua.
+                Cybersecurity Boost Up is your dedicated ally in the ever-evolving digital landscape. We're committed to elevating your security measures, offering innovative solutions to safeguard your data and assets.
                 </p>
                 <div className="banner-btn discover-btn-banner">
                   <a href="/scan" className="text-decoration-none">
@@ -198,10 +197,9 @@ export default function Home() {
                   <div className="cards-outer outer-card1" data-aos="fade-up">
                     <h6 className="heading-background">virtual events</h6>
                     <p className="card-heading-p vertical-bar-line">
-                      Cum sociis natoque penatibus et magnisd is parturient
-                      montes nasc.
+                    Join us for an immersive virtual experience that transcends boundaries. Our virtual events offer a unique platform for networking, learning, and collaborating with industry leaders. Don't miss out on the opportunity to connect with peers, gain insights, and stay ahead of the curve. Mark your calendar for an unforgettable digital journey!
                     </p>
-                    <p className="date-p">August 11, 2021</p>
+                    <p className="date-p">August 11, 2023</p>
                   </div>
                 </div>
                 <div className="col-lg-4 col-md-4 col-sm-12 mb-md-0 mb-4 text-md-left text-center">
@@ -211,10 +209,9 @@ export default function Home() {
                   >
                     <h6 className="heading-background">new report</h6>
                     <p className="card-heading-p vertical-bar-line">
-                      Cum sociis natoque penatibus et magnisd is parturient
-                      montes nasc.
+                    We are excited to announce the release of our latest report, which delves deep into the most pressing industry trends and developments. Backed by thorough research and expert insights, this report is your go-to resource for staying informed and making data-driven decisions.
                     </p>
-                    <p className="date-p">August 11, 2021</p>
+                    <p className="date-p">June 11, 2023</p>
                   </div>
                 </div>
                 <div
@@ -224,10 +221,9 @@ export default function Home() {
                   <div className="outer-padding-left-last outer-card3">
                     <h6 className="heading-background">expert panel</h6>
                     <p className="card-heading-p">
-                      Cum sociis natoque penatibus et magnisd is parturient
-                      montes nasc.
+                    Discover a wealth of knowledge from our esteemed panel of experts who will share their wisdom on a variety of pertinent topics. Our expert panel discussions are designed to offer valuable insights and foster meaningful conversations. Engage with thought leaders, ask questions, and gain a fresh perspective on the issues that matter most.
                     </p>
-                    <p className="date-p">August 11, 2021</p>
+                    <p className="date-p">Feb 07, 2023</p>
                   </div>
                 </div>
               </div>
@@ -243,7 +239,7 @@ export default function Home() {
       <div className="row">
         <div className="col-12">
           <h4 className="text-center p-0" data-aos="fade-zoom-in">
-            Trusted Over 2300+ Companies in the World
+            Trusted Over 100+ Companies in the World
           </h4>
         </div>
       </div>
@@ -350,8 +346,7 @@ export default function Home() {
             Why Choose Us
           </h3>
           <p className="text-center">
-            Lorem ipsum dolor sit amet consectetuer adipiscing elitenean commodo
-            ligula eget dolorenean massa.
+          At Security Boost Up, we understand that the digital landscape is fraught with threats and vulnerabilities. That's why we're dedicated to being your trusted cybersecurity partner. 
           </p>
         </div>
       </div>
@@ -369,8 +364,7 @@ export default function Home() {
             </div>
             <h4>Security Services</h4>
             <p className="security-services-p">
-              Donec pede justo, fringilla vel, aliquet nec vulputate eget, arcu.
-              In enim justo, rhoncus ut imperdiet.
+            We offers comprehensive security services designed to protect your digital world. From network security to rapid incident response, we keep your business safe from evolving cyber threats. Your security is our priority.
             </p>
             <a href="#About" className="text-decoration-none ">
               Learn More{" "}
@@ -393,8 +387,7 @@ export default function Home() {
             </div>
             <h4>Data Privacy</h4>
             <p className="security-services-p">
-              Lorem ipsum dolor sit ametconsectetuer dipiscing elitaenean
-              commodo ligula eget dolor aenean massa.
+            Protecting what matters most. Our data protection solutions ensure the security and privacy of your valuable information, safeguarding your business from data breaches and unauthorized access.
             </p>
             <a href="#About" className="text-decoration-none ">
               Learn More{" "}
@@ -417,8 +410,7 @@ export default function Home() {
             </div>
             <h4>Industry Certified</h4>
             <p className="security-services-p">
-              Integer tincidunt Cras dapibus bivamus ele mentum semper nisienean
-              vulputate eleife nd tellusenean leo ligula.
+            Industry-certified excellence. Security Boost Up holds the highest standards in cybersecurity, with industry certifications such as ISO 27001, CISSP, CISM, and PCI DSS. Trust in our expertise to fortify your digital defenses.
             </p>
             <a href="#About" className="text-decoration-none ">
               Learn More{" "}
@@ -454,14 +446,10 @@ export default function Home() {
               Provider
             </h3>
             <p className="security-services-p">
-              Lorem ipsum dolor sit amet consectetuer adipiscing elitenean commo
-              doligula eget dolorenean massa.In enim justo, rhoncus ut,
-              imperdiet avene natis vitae justo nullam dictum felis eu pede
-              mollis pretium Inte ger tincid unt cras dapibus
+            "Security Beyond Limits: We are your advanced cybersecurity provider, dedicated to safeguarding your digital assets with state-of-the-art solutions.
             </p>
             <p className="security-services-p cyber-p-margin-bottom">
-              Vamus elementum semper nisi aenean vulputate eleife nd tellus
-              onsec tet ueradip.
+            Our cutting-edge technology and expert team offer unrivaled protection against the most sophisticated cyber threats, ensuring your peace of mind in an ever-evolving digital landscape.
             </p>
             <div className="cyber-contact-btn">
               <a href="https://brandboostup.in/contact" className="text-decoration-none">
@@ -485,7 +473,7 @@ export default function Home() {
               </figure>
             </div>
             <h3 className="counetr-heading">
-              <span className="counter">3325</span>
+              <span className="counter">70</span>
               <span className="cyber-counter">+</span>
             </h3>
             <h5 className="cyber-boxes-text">Global Projects</h5>
@@ -499,7 +487,7 @@ export default function Home() {
               </figure>
             </div>
             <h3 className="counetr-heading">
-              <span className="counter">4579</span>
+              <span className="counter">379</span>
               <span className="cyber-counter clients-protect">+</span>
             </h3>
             <h5 className="cyber-boxes-text">Clients Protect</h5>
@@ -527,7 +515,7 @@ export default function Home() {
               </figure>
             </div>
             <h3 className="counetr-heading">
-              <span className="counter">7845</span>
+              <span className="counter">100</span>
               <span className="cyber-counter expert-team">+</span>
             </h3>
             <h5 className="cyber-boxes-text">Experts Team</h5>
@@ -547,14 +535,10 @@ export default function Home() {
               Solutions
             </h3>
             <p className="security-services-p">
-              Lorem ipsum dolor sit amet consectetuer adipiscing elitenean commo
-              doligula eget dolorenean massa.In enim justo, rhoncus ut,
-              imperdiet avene natis vitae justo nullam dictum felis eu pede
-              mollis pretium Inte ger tincid unt cras dapibus
+            Your Trusted Partner for the Best Cybersecurity Solutions: We are committed to delivering top-tier cybersecurity solutions that fortify your digital defenses. 
             </p>
             <p className="security-services-p cyber-p-margin-bottom">
-              Vamus elementum semper nisi aenean vulputate eleife nd tellus
-              onsec tet ueradip.
+            With a focus on innovation, expertise, and tailored strategies, we ensure your business remains resilient against evolving threats. Choose us for the best in cybersecurity protection.
             </p>
             <div className="cyber-contact-btn">
               <a href="https://brandboostup.in/contact" className="text-decoration-none">
@@ -595,8 +579,7 @@ export default function Home() {
             What We Offer
           </h3>
           <p className="text-center" data-aos="fade-left">
-            Lorem ipsum dolor sit amet consectetuer adipiscing elitenean commodo
-            ligula eget dolorenean massa.
+          Explore Our Offerings: Discover a comprehensive range of cutting-edge cybersecurity services, data protection solutions, and industry-certified expertise tailored to your needs. Your digital security is our priority.
           </p>
         </div>
       </div>
@@ -613,8 +596,7 @@ export default function Home() {
             </div>
             <h4>Threat Intelligence</h4>
             <p className="security-services-p">
-              Donec pede justo, fringilla vel, aliquet nec vulputate eget, arcu.
-              In enim justo, rhoncus ut imperdiet.
+            Stay Informed, Stay Secure: Threat intelligence is our proactive approach to identifying, assessing, and countering cybersecurity threats. We provide real-time insights and analysis to protect your digital assets from emerging risks.
             </p>
             <a href="#About" className="text-decoration-none ">
               Learn More{" "}
@@ -636,8 +618,7 @@ export default function Home() {
             </div>
             <h4>Security Assessment</h4>
             <p className="security-services-p">
-              Donec pede justo, fringilla vel, aliquet nec vulputate eget, arcu.
-              In enim justo, rhoncus ut imperdiet.
+            Evaluate, Strengthen, Secure: Our security assessment services provide a thorough analysis of your digital defenses. We identify vulnerabilities and recommend strategies to fortify your security posture, ensuring a resilient protection against cyber threats.
             </p>
             <a href="#About" className="text-decoration-none ">
               Learn More{" "}
@@ -659,8 +640,7 @@ export default function Home() {
             </div>
             <h4>Compromise Assessment</h4>
             <p className="security-services-p">
-              Donec pede justo, fringilla vel, aliquet nec vulputate eget, arcu.
-              In enim justo, rhoncus ut imperdiet.
+            Detecting Hidden Threats: Our compromise assessment service delves deep into your network to uncover any lurking threats and breaches. We provide the insights needed to respond swiftly, minimizing damage and bolstering your cybersecurity.
             </p>
             <a href="#About" className="text-decoration-none ">
               Learn More{" "}
@@ -681,8 +661,7 @@ export default function Home() {
             </div>
             <h4>Incident Response</h4>
             <p className="security-services-p">
-              Donec pede justo, fringilla vel, aliquet nec vulputate eget, arcu.
-              In enim justo, rhoncus ut imperdiet.
+            Rapid Defense, Swift Recovery: Our incident response services are your first line of defense when a security breach occurs. We act swiftly to contain the incident, mitigate damage, and guide your business towards a quick and effective recovery, ensuring minimal disruption.
             </p>
             <a href="#About" className="text-decoration-none ">
               Learn More{" "}
@@ -701,8 +680,7 @@ export default function Home() {
             </div>
             <h4>Security Training</h4>
             <p className="security-services-p">
-              Donec pede justo, fringilla vel, aliquet nec vulputate eget, arcu.
-              In enim justo, rhoncus ut imperdiet.
+            Empower Your Workforce: Our security training equips your employees with the knowledge and skills to recognize and prevent cyber threats. Build a vigilant team that contributes to a stronger security posture, reducing the risk of data breaches and security incidents.
             </p>
             <a href="#About" className="text-decoration-none ">
               Learn More{" "}
@@ -721,8 +699,7 @@ export default function Home() {
             </div>
             <h4>CLoud Security</h4>
             <p className="security-services-p">
-              Donec pede justo, fringilla vel, aliquet nec vulputate eget, arcu.
-              In enim justo, rhoncus ut imperdiet.
+            Secure the Cloud with Confidence: Our cloud security solutions protect your data and applications in the cloud environment. With robust measures in place, we ensure your cloud infrastructure remains resilient and compliant, even in the face of evolving digital threats
             </p>
             <a href="#About" className="text-decoration-none ">
               Learn More{" "}
@@ -762,7 +739,7 @@ export default function Home() {
                       aria-controls="collapseFour"
                     >
                       <h5 className="faq-btn-text">
-                        How Can I Safely Browse The Internet?
+                      What is cybersecurity, and why is it essential for my business?
                       </h5>
                     </a>
                   </div>
@@ -773,10 +750,7 @@ export default function Home() {
                   >
                     <div className="card-body">
                       <p className="text-left accordian-text-color">
-                        Lorem ipsum dolor sit amet consectetuer adipiscing
-                        elitenean commo doligula eget dolorenean massaIn enim
-                        justo, rhoncus ut, imperdiet avene natis vitae justo
-                        nullam dictum felis eu.
+                      Cybersecurity involves protecting your digital systems, networks, and data from cyber threats and attacks. It's crucial for your business to safeguard sensitive information, maintain customer trust, and prevent financial losses due to data breaches.
                       </p>
                     </div>
                   </div>
@@ -799,7 +773,8 @@ export default function Home() {
                       aria-controls="collapseFive"
                     >
                       <h5 className="faq-btn-text">
-                        How Does Secuvant&rsquo;s Co-managed Security Model Work?
+                        {/* How Does Secuvant&rsquo;s Co-managed Security Model Work? */}
+                        What sets your cybersecurity services apart from others in the industry?
                       </h5>
                     </a>
                   </div>
@@ -810,10 +785,7 @@ export default function Home() {
                   >
                     <div className="card-body">
                       <p className="text-left accordian-text-color">
-                        Lorem ipsum dolor sit amet consectetuer adipiscing
-                        elitenean commo doligula eget dolorenean massaIn enim
-                        justo, rhoncus ut, imperdiet avene natis vitae justo
-                        nullam dictum felis eu.
+                      Our cybersecurity services stand out because of our expert team, industry certifications, tailored solutions, and continuous innovation. We prioritize your specific needs and stay ahead of evolving threats.
                       </p>
                     </div>
                   </div>
@@ -836,8 +808,7 @@ export default function Home() {
                       aria-controls="collapseSix"
                     >
                       <h5 className="faq-btn-text">
-                        What Type Frequency Of Alerts And Notifications Will
-                        Receive?
+                      How do I know which cybersecurity solutions are right for my business?
                       </h5>
                     </a>
                   </div>
@@ -848,10 +819,7 @@ export default function Home() {
                   >
                     <div className="card-body">
                       <p className="text-left accordian-text-color">
-                        Lorem ipsum dolor sit amet consectetuer adipiscing
-                        elitenean commo doligula eget dolorenean massaIn enim
-                        justo, rhoncus ut, imperdiet avene natis vitae justo
-                        nullam dictum felis eu.
+                      We offer customized security assessments to identify your unique requirements. After evaluating your current infrastructure and potential risks, we recommend solutions that align with your goals and budget.
                       </p>
                     </div>
                   </div>
@@ -874,7 +842,7 @@ export default function Home() {
                       aria-controls="collapseSeven"
                     >
                       <h5 className="faq-btn-text">
-                        How Is Our Data Stored And Protected And For How Long?
+                      What should I do if I suspect a security breach in my organization?
                       </h5>
                     </a>
                   </div>
@@ -885,10 +853,7 @@ export default function Home() {
                   >
                     <div className="card-body">
                       <p className="text-left accordian-text-color">
-                        Lorem ipsum dolor sit amet consectetuer adipiscing
-                        elitenean commo doligula eget dolorenean massaIn enim
-                        justo, rhoncus ut, imperdiet avene natis vitae justo
-                        nullam dictum felis eu.
+                      Contact our incident response team immediately. They will assess the situation, contain the breach, and help you recover while minimizing damage. A swift response is crucial in such cases.
                       </p>
                     </div>
                   </div>
@@ -909,8 +874,7 @@ export default function Home() {
             Your Pricing Plan
           </h3>
           <p className="text-center" data-aos="fade-up-left">
-            Lorem ipsum dolor sit amet consectetuer adipiscing elitenean commodo
-            ligula eget dolorenean massa.
+          Transparent and Flexible Pricing: Our pricing plans are designed to fit your specific cybersecurity needs. We offer transparent options that scale with your business, ensuring affordability without compromising on security.
           </p>
         </div>
       </div>
@@ -924,10 +888,10 @@ export default function Home() {
             </div>
             <h4 className="pricing-plan-h4">Beginner</h4>
             <h3 className="pricing-plan-color">
-              Free <span className="pricing-free-text">/Month</span>
+              Free Trial <span className="pricing-free-text">/7 Days</span>
             </h3>
             <p className="pricing-content">
-              30 Days Product Testing Upgrade Anytime Protection 500 Malware
+              7 Days Product Testing Upgrade Anytime Protection 500 Malware
               Removal 24/7 Live Assistance Scan Every 12 Hrs Configure Software
               One-time
             </p>
@@ -947,7 +911,7 @@ export default function Home() {
             </div>
             <h4 className="pricing-plan-h4">Business</h4>
             <h3 className="pricing-plan-color">
-              $39.99<span className="pricing-free-text">/Month</span>
+            ₹9,999<span className="pricing-free-text">/Month</span>
             </h3>
             <p className="pricing-content">
               40 Days Product Testing Upgrade Anytime Protection 1000 Malware
@@ -970,7 +934,7 @@ export default function Home() {
             </div>
             <h4 className="pricing-plan-h4">Exclusive</h4>
             <h3 className="pricing-plan-color">
-              $47.85 <span className="pricing-free-text">/Month</span>
+            ₹15,000 <span className="pricing-free-text">/Month</span>
             </h3>
             <p className="pricing-content">
               50 Days Product Testing Upgrade Anytime Protection Unlimited
@@ -1124,9 +1088,7 @@ export default function Home() {
                 </a>
               </figure>
               <p className="red-light-footer-p">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elitsed do
-                eiusmod tempororem ipsum dolor sit am econsect ametconsectetetur
-                adipiscing.
+              Stay Secure with Us: Your trusted cybersecurity partner. Explore our services, get in touch, or request a consultation to fortify your digital defenses. Your security is our mission.
               </p>
               <div className="social-icons teams-social-icons">
                 <ul className="list-unstyled">
@@ -1326,8 +1288,8 @@ export default function Home() {
                         href="#"
                         className="text-decoration-none footer-link-p ml-0"
                       >
-                        <span className="footer-additional">Addres: </span> King
-                        Street Melbourne, 3000, Australia
+                        <span className="footer-additional">Addres: </span> New Delhi
+                        Saket, 110017, India
                       </a>
                     </div>
                   </li>

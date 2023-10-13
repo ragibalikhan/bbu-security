@@ -2,6 +2,7 @@
 
 import React, { useState } from 'react';
 import Script from 'next/script'
+import Head from 'next/head'
 
 export default function Scan() {
     const [websiteUrl, setWebsiteUrl] = useState('');
@@ -26,8 +27,16 @@ export default function Scan() {
         console.error('Error scanning website:', error);
       }
     };
+    
     return (
         <>
+        <Head>
+        <link
+        rel="apple-touch-icon"
+        sizes="57x57"
+        href="images/security-boost1.png"
+    />
+        </Head>
    <div className="home-header-section">
     <header className="header">
       <div className="main-header">
@@ -35,10 +44,10 @@ export default function Scan() {
           <nav className="navbar navbar-expand-lg navbar-light p-0">
             <a className="navbar-brand pt-0" href="/">
               <img
-                src="images/security-boost.png"
+                src="images/security-boost1.png"
                 alt=""
                 className="img-fluid diverge-logo"
-                style={{ width: '50px', height: '50px' }}
+                // style={{ width: '50px', height: '50px' }}
               />
             </a>
             <button
