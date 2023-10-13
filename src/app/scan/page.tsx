@@ -47,7 +47,7 @@ export default function Scan() {
                 src="images/security-boost1.png"
                 alt=""
                 className="img-fluid diverge-logo"
-                // style={{ width: '50px', height: '50px' }}
+                 style={{ width: '50px', height: '50px' }}
               />
             </a>
             <button
