@@ -1310,6 +1310,7 @@ export default function Home() {
               target="_blank"
               rel="noopener noreferrer"
               className="text-decoration-none footer-link-p copyrighturl"
+              style={{ width: '100px', height: '100px' }}
             >
               Brand Boost Up
             </a> All Rights Reserved
