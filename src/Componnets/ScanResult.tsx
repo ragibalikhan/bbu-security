@@ -168,29 +168,30 @@ const ScanResultComponent: React.FC<ScanResultProps> = ({ data }) => {
                         </p>
                       )}
                       <IconWrapper>
-                        {categoryData[vulnerability] === 'Detected' ? (
-                          <DetectedText>Detected:</DetectedText>
-                        ) : categoryData[vulnerability] === 'Not Detected' ? (
-                          <NotDetectedText>Not Detected:</NotDetectedText>
-                        ) : categoryData[vulnerability].includes('Potential') ? (
-                          <PotentialWarningText>Potential:</PotentialWarningText>
-                        ) : categoryData[vulnerability].includes('Missing') ? (
-                          <MissingText>Missing:</MissingText>
-                        ) : (
-                          <SafeText>Safe:</SafeText>
-                        )}
-                        {categoryData[vulnerability] === 'Detected' ? (
-                          <FaExclamationTriangle style={{ color: 'red' }} />
-                        ) : categoryData[vulnerability] === 'Not Detected' ? (
-                          <FaCheckCircle style={{ color: 'green' }} />
-                        ) : categoryData[vulnerability].includes('Potential') ? (
-                          <FaExclamationTriangle style={{ color: 'red' }} />
-                        ) : categoryData[vulnerability].includes('Missing') ? (
-                          <FaExclamationTriangle style={{ color: 'red' }} />
-                        ) : (
-                          <FaCheckCircle style={{ color: 'green' }} />
-                        )}
-                      </IconWrapper>
+                      {categoryData[vulnerability] === 'Detected' ? (
+                        <DetectedText>Detected:</DetectedText>
+                      ) : categoryData[vulnerability] === 'Not Detected' ? (
+                        <NotDetectedText>Not Detected:</NotDetectedText>
+                      ) : (categoryData[vulnerability] as string).includes('Potential') ? (
+                        <PotentialWarningText>Potential:</PotentialWarningText>
+                      ) : (categoryData[vulnerability] as string).includes('Missing') ? (
+                        <MissingText>Missing:</MissingText>
+                      ) : (
+                        <SafeText>Safe:</SafeText>
+                      )}
+                      {categoryData[vulnerability] === 'Detected' ? (
+                        <FaExclamationTriangle style={{ color: 'red' }} />
+                      ) : categoryData[vulnerability] === 'Not Detected' ? (
+                        <FaCheckCircle style={{ color: 'green' }} />
+                      ) : (categoryData[vulnerability] as string).includes('Potential') ? (
+                        <FaExclamationTriangle style={{ color: 'red' }} />
+                      ) : (categoryData[vulnerability] as string).includes('Missing') ? (
+                        <FaExclamationTriangle style={{ color: 'red' }} />
+                      ) : (
+                        <FaCheckCircle style={{ color: 'green' }} />
+                      )}
+                    </IconWrapper>
+
                       {categoryData[vulnerability] as React.ReactNode}
                     </p>
                   ) : (
