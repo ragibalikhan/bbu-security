@@ -3,40 +3,60 @@
 import React, { useState } from 'react';
 import Script from 'next/script'
 import Head from 'next/head'
+import ScanResultComponent from '@/Componnets/ScanResult';
+
 
 export default function Scan() {
-    const [websiteUrl, setWebsiteUrl] = useState('');
-    const [scanResult, setScanResult] = useState(null);
-    const [error, setError] = useState<string | null>(null);
-    const [subscribed, setSubscribed] = useState(false);
-  
-    const handleScan = async () => {
-      try {
-        const response = await fetch(`/api/scan?url=${websiteUrl}`);
-        if (response.ok) {
-          const data = await response.json();
-          setScanResult(data);
-          setError(null); // Clear any previous error
-        } else {
-          setError(
-            'The scanner is currently upgrading. Please subscribe to our newsletter to receive notifications when it becomes available.'
-          );
-        }
-      } catch (error) {
-        setError('An error occurred while scanning. Please try again later.');
-        console.error('Error scanning website:', error);
+  const [websiteUrl, setWebsiteUrl] = useState('');
+  const [scanResult, setScanResult] = useState(null);
+  const [error, setError] = useState<string | null>(null); // Define as string | null
+  const [subscribed, setSubscribed] = useState(false);
+  const [loading, setLoading] = useState(false);
+
+  const handleScan = async () => {
+    // Check if the URL starts with "http://" or "https://"
+    const urlRegex = /^(https?:\/\/)/;
+    if (!urlRegex.test(websiteUrl)) {
+      setError('Please enter a valid URL starting with http:// or https://');
+      return;
+    }
+
+    try {
+      setLoading(true);
+      const response = await fetch('http://127.0.0.1:5000/scan_all_vulnerabilities?url=' + websiteUrl);
+      if (response.ok) {
+        const data = await response.json();
+        setScanResult(data);
+        setError(null);
+      } else {
+        setError(
+          'The scanner is currently upgrading. Please subscribe to our newsletter to receive notifications when it becomes available.'
+        );
       }
-    };
-    
+    } catch (error) {
+      setError('An error occurred while scanning. Please try again later.');
+      console.error('Error scanning website:', error);
+    } finally {
+      setLoading(false);
+    }
+  };
+
+  // Handle Enter key press for scanning
+  const handleEnterPress = (e: React.KeyboardEvent<HTMLInputElement>) => {
+    if (e.key === 'Enter') {
+      handleScan();
+    }
+  };
+  
     return (
         <>
-        <Head>
+        {/* <Head>
         <link
         rel="apple-touch-icon"
         sizes="57x57"
         href="images/security-boost1.png"
     />
-        </Head>
+        </Head> */}
    <div className="home-header-section">
     <header className="header">
       <div className="main-header">
@@ -47,7 +67,7 @@ export default function Scan() {
                 src="images/security-boost1.png"
                 alt=""
                 className="img-fluid diverge-logo"
-                // style={{ width: '50px', height: '50px' }}
+                style={{ width: '50px', height: '50px' }}
               />
             </a>
             <button
@@ -79,7 +99,7 @@ export default function Scan() {
                 <li className="nav-item active">
                   <a
                     className="nav-link text-decoration-none navbar-text-color"
-                    href="/scan"
+                    href="/Scan"
                   >
                     Scan
                   </a>
@@ -149,71 +169,88 @@ export default function Scan() {
                 The scanner is currently under development. Please subscribe to our newsletter to receive notifications when it becomes available. 
                 </p>
 
-                {/* Scanner Box */}
-                <div className="container">
-        <div className="input-group my-3">
+
+{/* Scanner Box */}
+<div className="container">
+          <div className="input-group my-3">
+            <input
+              type="text"
+              className="form-control"
+              placeholder="Website URL"
+              aria-label="Website URL"
+              aria-describedby="button-addon"
+              value={websiteUrl}
+              onChange={(e) => setWebsiteUrl(e.target.value)}onKeyPress={handleEnterPress}
+            />
+            <button
+              className="btn btn-outline-secondary"
+              type="button"
+              id="button-addon"
+              onClick={handleScan}
+            >
+              Scan
+            </button>
+          </div>
+        </div>
+
+        {/* Loading bar */}
+        {loading && (
+          <div className="loading-bar" style={{ width: '100%' }}>
+            <div className="my-bar">
+              <div className="progress-bar"></div>
+            </div>
+          </div>
+        )}
+        {error && !loading && (
+          <div className="input-group mt-2">
           <input
             type="text"
             className="form-control"
-            placeholder="Search..."
-            aria-label="Search"
-            aria-describedby="button-addon"
+            placeholder="Your Email"
+            aria-label="Subscribe"
             value={websiteUrl}
             onChange={(e) => setWebsiteUrl(e.target.value)}
           />
+          {/* <div className="input-group-append">
+            <button
+              className="btn btn-primary"
+              type="button"
+              onClick={() => setSubscribed(true)}
+            >
+              Subscribe
+            </button>
+          </div> */}
           <button
-            className="btn btn-outline-secondary"
             type="button"
-            id="button-addon"
-            onClick={handleScan}
+            className="close"
+            onClick={() => setError(null)}
           >
-            <i className="fa fa-search"></i>
+            <span>&times;</span>
           </button>
         </div>
-      </div>
-      {/* Display error alert with subscribe box */}
-      {error && !subscribed && (
+            
+          
+        )}
+
+        {/* Display the error in the scanner box with a red alert */}
+      {error && !loading && (
         <div className="container">
-          <div className="alert alert-danger mt-3" role="alert">
+          <div className="alert alert-danger mt-2" role="alert">
             {error}
-            <div className="input-group mt-2">
-              <input
-                type="text"
-                className="form-control"
-                placeholder="Your Email"
-                aria-label="Subscribe"
-                value={websiteUrl}
-                onChange={(e) => setWebsiteUrl(e.target.value)}
-              />
-              <div className="input-group-append">
-                <button
-                  className="btn btn-primary"
-                  type="button"
-                  onClick={() => setSubscribed(true)}
-                >
-                  Subscribe
-                </button>
-              </div>
-              <button
-                type="button"
-                className="close"
-                onClick={() => setError(null)}
-              >
-                <span>&times;</span>
-              </button>
+          </div>
+        </div>
+      )}
+
+        {scanResult && !loading && (
+          <div className="container">
+            <div className="mt-4">
+              <h3>Scan Result:</h3>
+              {/* Add ScanResultComponent here to display the results beautifully */}
+              <ScanResultComponent data={scanResult} />
             </div>
           </div>
-        </div>
-      )}
-      {/* Display scan result */}
-      {scanResult && (
-        <div className="container">
-          <div className="mt-4">
-            <h3>Scan Result:</h3>
-            <pre>{JSON.stringify(scanResult, null, 2)}</pre>
-          </div>
-        </div>
-      )}
+        )}
+      
                 
                 
                 {/* banner */}
