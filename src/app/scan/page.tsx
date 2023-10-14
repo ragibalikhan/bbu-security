@@ -23,7 +23,7 @@ export default function Scan() {
 
     try {
       setLoading(true);
-      const response = await fetch('http://127.0.0.1:5000/scan_all_vulnerabilities?url=' + websiteUrl);
+      const response = await fetch('https://bbu-security-api.onrender.com/scan_all_vulnerabilities?url=' + websiteUrl);
       if (response.ok) {
         const data = await response.json();
         setScanResult(data);
@@ -166,7 +166,7 @@ export default function Scan() {
                   Organizations with Critical Infrastructure
                 </h1>
                 <p className="text-white banner-paragraph">
-                The scanner is currently under development. Please subscribe to our newsletter to receive notifications when it becomes available. 
+                The scanner Scope is too small. Don't use it for professional audit&quot;s. 
                 </p>
 
 
