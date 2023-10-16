@@ -251,9 +251,10 @@ export default function Home() {
             data-aos-easing="ease-out-cubic"
             data-aos-duration={2000}
           >
-            <figure className="mb-0 comapanies-icon-margin icons-mb">
-              <img src="images/companies-icon1.png" alt="" />
-            </figure>
+            <div className="mb-0 comapanies-icon-margin icons-mb">
+              <img src="images/companies-icon1.png" alt=""
+              style={{ width: '80px', height: '80px' }} />
+            </div>
           </div>
         </div>
         <div className="col-lg-2 col-sm-4 col-6 mb-md-0 mb-4 text-center d-table align-items-center">
@@ -263,9 +264,10 @@ export default function Home() {
             data-aos-easing="ease-out-cubic"
             data-aos-duration={2000}
           >
-            <figure className="mb-0 comapanies-icon-margin icons-mb">
-              <img src="images/companies-icon2.png" alt="" />
-            </figure>
+            <div className="mb-0 comapanies-icon-margin icons-mb">
+              <img src="images/companies-icon2.png" alt=""
+              style={{ width: '50px', height: '50px' }} />
+            </div>
           </div>
         </div>
         <div className="col-lg-2 col-sm-4 col-6 mb-md-0  mb-4 text-center d-table align-items-center">
@@ -275,9 +277,10 @@ export default function Home() {
             data-aos-easing="ease-out-cubic"
             data-aos-duration={2000}
           >
-            <figure className="mb-0 comapanies-icon-margin-hype icons-mb">
-              <img src="images/companies-icon3.png" alt="" />
-            </figure>
+            <div className="mb-0 comapanies-icon-margin-hype icons-mb">
+              <img src="images/companies-icon3.png" alt="" 
+              style={{ width: '50px', height: '50px' }} />
+            </div>
           </div>
         </div>
         <div className="col-lg-2 col-sm-4 col-6 mb-md-0 mb-4 text-center d-table align-items-center">
@@ -287,9 +290,10 @@ export default function Home() {
             data-aos-easing="ease-out-cubic"
             data-aos-duration={2000}
           >
-            <figure className="mb-0 comapanies-icon-margin-3">
-              <img src="images/companies-icon4.png" alt="" />
-            </figure>
+            <div className="mb-0 comapanies-icon-margin-3">
+              <img src="images/companies-icon4.png" alt=""
+              style={{ width: '50px', height: '50px' }}  />
+            </div>
           </div>
         </div>
         <div className="col-lg-2 col-sm-4 col-6 mb-md-0 mb-4 text-center d-table align-items-center">
@@ -299,9 +303,10 @@ export default function Home() {
             data-aos-easing="ease-out-cubic"
             data-aos-duration={2000}
           >
-            <figure className="mb-0 comapanies-icon-margin-3">
-              <img src="images/companies-icon5.png" alt="" />
-            </figure>
+            <div className="mb-0 comapanies-icon-margin-3">
+              <img src="images/fans-army.webp" alt="" 
+              style={{ width: '80px', height: '50px' }} />
+            </div>
           </div>
         </div>
         <div className="col-lg-2 col-sm-4 col-6 mb-md-0 mb-4 text-center d-table align-items-center">
@@ -311,9 +316,10 @@ export default function Home() {
             data-aos-easing="ease-out-cubic"
             data-aos-duration={2000}
           >
-            <figure className="mb-0 mt-0 comapanies-icon-margin-3 companies-icon6">
-              <img src="images/companies-icon6.png" alt="" />{" "}
-            </figure>
+            <div className="mb-0 mt-0 comapanies-icon-margin-3 companies-icon6">
+              <img src="images/aiims-6.jpg" alt=""
+              style={{ width: '50px', height: '50px' }} /> {" "}
+            </div>
           </div>
         </div>
       </div>
