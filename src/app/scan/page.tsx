@@ -166,7 +166,7 @@ export default function Scan() {
                   Organizations with Critical Infrastructure
                 </h1>
                 <p className="text-white banner-paragraph">
-                The scanner Scope is too small. Don&quot;t use it for professional audit&quot;s.
+                The scanner Scope is too small. Don&apos;t use it for professional audit&apos;s.
                 </p>
 
 
