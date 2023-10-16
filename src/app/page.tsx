@@ -2,6 +2,7 @@
 
 import React, { useEffect, useState } from 'react';
 import Script from 'next/script'
+import Image from 'next/image'
 
 export default function Home() {
 
@@ -27,11 +28,12 @@ export default function Home() {
         <div className="container">
           <nav className="navbar navbar-expand-lg navbar-light p-0">
             <a className="navbar-brand pt-0" href="/">
-              <img
-                src="images/security-boost1.png"
-                alt=""
+            <Image
+                src="/images/security-boost1.png"
+                width={50}
+                height={50}
+                alt="Security-Boost-Up"
                 className="img-fluid diverge-logo"
-                style={{ width: '50px', height: '50px' }}
               />
             </a>
             <button
@@ -894,15 +896,15 @@ export default function Home() {
             </div>
             <h4 className="pricing-plan-h4">Beginner</h4>
             <h3 className="pricing-plan-color">
-              Free Trial <span className="pricing-free-text">/7 Days</span>
+              Free Trial <span className="pricing-free-text">/5 Days</span>
             </h3>
             <p className="pricing-content">
-              7 Days Product Testing Upgrade Anytime Protection 500 Malware
-              Removal 24/7 Live Assistance Scan Every 12 Hrs Configure Software
-              One-time
+              Limited access to essential cybersecurity tools and resources.
+              Basic email support during the trial period.
+              Access to educational materials on cybersecurity best practices.
             </p>
             <div className="order-now-btn">
-              <a href="#Pricing" className="text-decoration-none ">
+              <a href="https://wa.link/cat61b" className="text-decoration-none ">
                 Order Now
               </a>
             </div>
@@ -920,12 +922,14 @@ export default function Home() {
             ₹9,999<span className="pricing-free-text">/Month</span>
             </h3>
             <p className="pricing-content">
-              40 Days Product Testing Upgrade Anytime Protection 1000 Malware
-              Removal 24/7 Live Assistance Scan Every 13 Hrs Configure Software
-              One-time
+              Full access to a comprehensive suite of cybersecurity tools and resources.
+              24/7 email and chat support.
+              Monthly security reports and vulnerability assessments.
+              Regular software and threat updates.
+              Access to exclusive webinars and workshops.
             </p>
             <div className="order-now-btn">
-              <a href="#Pricing" className="text-decoration-none ">
+              <a href="https://wa.link/6xmwcb" className="text-decoration-none ">
                 Order Now
               </a>
             </div>
@@ -943,12 +947,18 @@ export default function Home() {
             ₹15,000 <span className="pricing-free-text">/Month</span>
             </h3>
             <p className="pricing-content">
-              50 Days Product Testing Upgrade Anytime Protection Unlimited
-              Malware Removal 24/7 Live Assistance Scan Every 14 Hrs Configure
-              Software Life-time
+              Full access to a comprehensive suite of cybersecurity tools and resources.
+              24/7 email and chat support.
+              Monthly security reports and vulnerability assessments.
+              Regular software and threat updates.
+              Access to exclusive webinars and workshops.
+              Malware removal and cleanup service.
+              Priority response and assistance during security incidents.
+              Personalized training and consultation sessions.
+              On-demand security assessments for your website.
             </p>
             <div className="order-now-btn">
-              <a href="#Pricing" className="text-decoration-none ">
+              <a href="https://wa.link/vxuf2d" className="text-decoration-none ">
                 Order Now
               </a>
             </div>
@@ -967,8 +977,7 @@ export default function Home() {
             Latest News &amp; Blog
           </h3>
           <p className="text-center" data-aos="fade-up-left">
-            Lorem ipsum dolor sit amet consectetuer adipiscing elitenean commodo
-            ligula eget dolorenean massa.
+          Stay Informed with Our Latest News & Blog Updates
           </p>
         </div>
       </div>
@@ -1086,11 +1095,12 @@ export default function Home() {
             <div className="footer-content1" data-aos="flip-left">
               <figure>
                 <a href="/">
-                  <img
-                    src="images/security-boost1.png"
-                    alt=""
+                  <Image
+                    src="/images/security-boost1.png"
+                    alt="Security-Boost-Up"
+                    width={100}
+                    height={100}
                     className="img-fluid"
-                    style={{ width: '100px', height: '100px' }}
                   />
                 </a>
               </figure>
