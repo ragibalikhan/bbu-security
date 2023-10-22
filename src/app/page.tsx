@@ -5,7 +5,43 @@ import Script from 'next/script'
 import Image from 'next/image'
 import logo from './logo.png'
 
+type Country = 'US' | 'IN';
+
 export default function Home() {
+ // Define a type for the valid country keys
+ // Add more countries as needed
+  const [country, setCountry] = useState<Country>('IN'); // Default country
+
+  useEffect(() => {
+    // Fetch the user's country based on their IP address using ipinfo.io or any other geolocation service
+    fetch('https://ipinfo.io')
+      .then((response) => response.json())
+      .then((data) => {
+        setCountry(data.country as Country); // Set the user's country based on the response
+      });
+  }, []);
+
+  // Define the pricing based on the user's country
+  const pricing: Record<Country, { beginner: string; business: string; exclusive: string }> = {
+    US: {
+      beginner: 'Free Trial',
+      business: '249$',
+      exclusive: '499$',
+    },
+
+    IN: {
+      beginner: 'Free Trial',
+      business: '₹9,999',
+      exclusive: '₹15,000',
+    }
+    // Add pricing for other countries as needed
+    // Example:
+    // UK: {
+    //   beginner: 'GBP 199',
+    //   business: 'GBP 7999',
+    //   exclusive: 'GBP 12000',
+    // },
+  };
 
     const [currentYear, setCurrentYear] = useState<number>(new Date().getFullYear());
   
@@ -898,7 +934,7 @@ export default function Home() {
             </div>
             <h4 className="pricing-plan-h4">Beginner</h4>
             <h3 className="pricing-plan-color">
-              Free Trial <span className="pricing-free-text">/5 Days</span>
+            {pricing[country]?.beginner} <span className="pricing-free-text">/ 5Days</span>
             </h3>
             <p className="pricing-content">
               Limited access to essential cybersecurity tools and resources.
@@ -921,7 +957,7 @@ export default function Home() {
             </div>
             <h4 className="pricing-plan-h4">Business</h4>
             <h3 className="pricing-plan-color">
-            ₹9,999<span className="pricing-free-text">/Month</span>
+            {pricing[country]?.business}<span className="pricing-free-text">/Month</span>
             </h3>
             <p className="pricing-content">
               Full access to a comprehensive suite of cybersecurity tools and resources.
@@ -946,7 +982,7 @@ export default function Home() {
             </div>
             <h4 className="pricing-plan-h4">Exclusive</h4>
             <h3 className="pricing-plan-color">
-            ₹15,000 <span className="pricing-free-text">/Month</span>
+            {pricing[country]?.exclusive} <span className="pricing-free-text">/Month</span>
             </h3>
             <p className="pricing-content">
               Full access to a comprehensive suite of cybersecurity tools and resources.
