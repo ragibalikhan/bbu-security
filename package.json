@@ -12,6 +12,7 @@
     "@netlify/next": "^1.4.9",
     "chart.js": "^4.4.0",
     "next": "13.5.4",
+    "node-ipinfo": "^3.4.6",
     "react": "^18",
     "react-dom": "^18",
     "react-icons": "^4.11.0",

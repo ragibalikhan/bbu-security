@@ -4,6 +4,7 @@ import React, { useEffect, useState } from 'react';
 import Script from 'next/script'
 import Image from 'next/image'
 import logo from './logo.png'
+import IPinfoWrapper, { IPinfo } from 'node-ipinfo';
 
 type Country = 'US' | 'IN';
 
@@ -13,12 +14,20 @@ export default function Home() {
   const [country, setCountry] = useState<Country>('IN'); // Default country
 
   useEffect(() => {
-    // Fetch the user's country based on their IP address using ipinfo.io or any other geolocation service
-    fetch('https://ipinfo.io')
-      .then((response) => response.json())
-      .then((data) => {
-        setCountry(data.country as Country); // Set the user's country based on the response
-      });
+    // Create a function to get the user's IP address
+    const getUserIPAddress = async () => {
+      try {
+        const response = await fetch('https://ipinfo.io?token=6aea356eb3dc8f'); // Replace with your actual token
+        const data = await response.json();
+        const userCountry = data.country as Country;
+        setCountry(userCountry);
+      } catch (error) {
+        console.error('Error fetching user IP address:', error);
+      }
+    };
+
+    // Call the function to get the user's IP address
+    getUserIPAddress();
   }, []);
 
   // Define the pricing based on the user's country
