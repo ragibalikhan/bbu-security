@@ -3,6 +3,7 @@
 import React, { useEffect, useState } from 'react';
 import Script from 'next/script'
 import Image from 'next/image'
+import logo from './logo.png'
 
 export default function Home() {
 
@@ -29,7 +30,7 @@ export default function Home() {
           <nav className="navbar navbar-expand-lg navbar-light p-0">
             <a className="navbar-brand pt-0" href="/">
             <Image
-                src="/images/security-boost1.png"
+                src={logo}
                 width={50}
                 height={50}
                 alt="Security-Boost-Up"
@@ -151,23 +152,23 @@ export default function Home() {
                     </a>
                   </li>
                   <li>
-                    <a href="" className="text-decoration-none">
-                      <i className="fa-brands fa-facebook-f social-networks" />
+                    <a href="tel:+919258602423" className="text-decoration-none">
+                      <i className="fa-solid fa-phone social-networks" />
                     </a>
                   </li>
                   <li>
-                    <a href="" className="text-decoration-none">
-                      <i className="fa-brands fa-twitter social-networks" />
+                    <a href="https://wa.link/cat61b" className="text-decoration-none">
+                      <i className="fa-brands fa-whatsapp social-networks" />
                     </a>
                   </li>
                   <li>
-                    <a href="" className="text-decoration-none">
+                    <a href="https://www.linkedin.com/company/boostup-in/" className="text-decoration-none">
                       <i className="fa-brands fa-linkedin-in social-networks" />
                     </a>
                   </li>
                   <li>
-                    <a href="" className="text-decoration-none">
-                      <i className="fa-brands fa-pinterest-p social-networks" />
+                    <a href="#" className="text-decoration-none">
+                      <i className="fa-brands fa-skype social-networks" />
                     </a>
                   </li>
                 </ul>
@@ -1096,7 +1097,7 @@ export default function Home() {
               <figure>
                 <a href="/">
                   <Image
-                    src="/images/security-boost1.png"
+                    src={logo}
                     alt="Security-Boost-Up"
                     width={100}
                     height={100}

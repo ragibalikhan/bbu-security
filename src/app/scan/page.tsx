@@ -4,7 +4,8 @@ import React, { useState } from 'react';
 import Script from 'next/script'
 import Head from 'next/head'
 import ScanResultComponent from '@/Componnets/ScanResult';
-
+import logo from '../logo.png'
+import Image from 'next/image';
 
 export default function Scan() {
   const [websiteUrl, setWebsiteUrl] = useState('');
@@ -63,11 +64,12 @@ export default function Scan() {
         <div className="container">
           <nav className="navbar navbar-expand-lg navbar-light p-0">
             <a className="navbar-brand pt-0" href="/">
-              <img
-                src="images/security-boost1.png"
-                alt=""
+            <Image
+                src={logo}
+                width={50}
+                height={50}
+                alt="Security-Boost-Up"
                 className="img-fluid diverge-logo"
-                style={{ width: '50px', height: '50px' }}
               />
             </a>
             <button
@@ -256,31 +258,31 @@ export default function Scan() {
                 {/* banner */}
               </div>
               
-              <div className="social-icons" >
+              <div className="social-icons" data-aos="zoom-out-left">
                 <ul className="list-unstyled">
                   <li>
-                    <a className="text-decoration-none" href="#">
+                    <a className="text-decoration-none" href="/Scan">
                       <i className="fa-regular fa-horizontal-rule" />
                     </a>
                   </li>
                   <li>
-                    <a href="" className="text-decoration-none">
-                      <i className="fa-brands fa-facebook-f social-networks" />
+                    <a href="tel:+919258602423" className="text-decoration-none">
+                      <i className="fa-solid fa-phone social-networks" />
                     </a>
                   </li>
                   <li>
-                    <a href="" className="text-decoration-none">
-                      <i className="fa-brands fa-twitter social-networks" />
+                    <a href="https://wa.link/cat61b" className="text-decoration-none">
+                      <i className="fa-brands fa-whatsapp social-networks" />
                     </a>
                   </li>
                   <li>
-                    <a href="" className="text-decoration-none">
+                    <a href="https://www.linkedin.com/company/boostup-in/" className="text-decoration-none">
                       <i className="fa-brands fa-linkedin-in social-networks" />
                     </a>
                   </li>
                   <li>
-                    <a href="" className="text-decoration-none">
-                      <i className="fa-brands fa-pinterest-p social-networks" />
+                    <a href="#" className="text-decoration-none">
+                      <i className="fa-brands fa-skype social-networks" />
                     </a>
                   </li>
                 </ul>

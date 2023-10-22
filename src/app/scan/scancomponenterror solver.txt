@@ -1,3 +1,0 @@
-return <div className="scan-result-container">{renderVulnerabilityData()}</div>;
-
-<p>{categoryData[vulnerability] as React.ReactNode}</p>
