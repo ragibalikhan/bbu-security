@@ -16,14 +16,15 @@ export function middleware(request: NextRequest) {
     block-all-mixed-content;
     upgrade-insecure-requests;
   `
- 
+
   const requestHeaders = new Headers(request.headers)
   requestHeaders.set('x-nonce', nonce)
-  requestHeaders.set(
-    'Content-Security-Policy',
-    cspHeader.replace(/\s{2,}/g, ' ').trim()
-  )
- 
+  requestHeaders.set('Content-Security-Policy', cspHeader.replace(/\s{2,}/g, ' ').trim())
+  requestHeaders.set('X-Content-Type-Options', 'nosniff')
+  requestHeaders.set('X-Frame-Options', 'DENY')
+  requestHeaders.set('X-XSS-Protection', '1; mode=block')
+  requestHeaders.set('Strict-Transport-Security', 'max-age=63072000; includeSubDomains; preload')
+
   return NextResponse.next({
     headers: requestHeaders,
     request: {
