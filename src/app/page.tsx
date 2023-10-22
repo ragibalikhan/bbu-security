@@ -1047,8 +1047,7 @@ export default function Home() {
                 Protect Your Workplace From Cyber Attacks
               </h5>
               <p className="blogs-p">
-                Nullam dictum felis eu pede mollis pre tium Integer tinciduntras
-                dapibusv enean vulputate eleifend tellus.
+                Cyber Attacks
               </p>
             </a>
           </div>
@@ -1069,8 +1068,7 @@ export default function Home() {
                 The Security Risks Of Changing Package Owners
               </h5>
               <p className="blogs-p">
-                Quisque rutruma enean imperdiet etiam ultricies nisi vel augue
-                curabitur unisi nam eget dui etiam rhoncus.
+                Security Risks
               </p>
             </a>
           </div>
@@ -1089,8 +1087,7 @@ export default function Home() {
               </div>
               <h5 className="blogs-h5">Avoid Mistakes In Social Media Posts</h5>
               <p className="blogs-p">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore.
+                Avoid Mistakes!
               </p>
             </a>
           </div>
@@ -1108,8 +1105,7 @@ export default function Home() {
               Subscribe Our Newsletter
             </h3>
             <p className="text-center form-section-p" data-aos="fade-up-left">
-              Lorem ipsum dolor sit amet consectetuer adipiscing elitenean
-              commodo ligula eget dolorenean massa.
+              Get latest security news and offers!
             </p>
             <div className="input-group mb-3 input-field-form">
               <input
