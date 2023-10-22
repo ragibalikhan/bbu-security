@@ -11,7 +11,7 @@
   "dependencies": {
     "@netlify/next": "^1.4.9",
     "chart.js": "^4.4.0",
-    "next": "^13.5.4",
+    "next": "13.4.9",
     "node-ipinfo": "^3.4.6",
     "react": "^18",
     "react-dom": "^18",
