@@ -68,6 +68,7 @@ export default function Scan() {
                 src={logo}
                 width={50}
                 height={50}
+                priority={true}
                 alt="Security-Boost-Up"
                 className="img-fluid diverge-logo"
               />

@@ -33,6 +33,7 @@ export default function Home() {
                 src={logo}
                 width={50}
                 height={50}
+                priority={true}
                 alt="Security-Boost-Up"
                 className="img-fluid diverge-logo"
               />
