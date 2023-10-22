@@ -6,10 +6,10 @@ const nextConfig = {
           {
             source: '/(.*)', // Apply these headers to all paths
             headers: [
-            //   {
-            //     key: 'Content-Security-Policy',
-            //     value: "default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline';",
-            //   },
+                {
+                    key: 'Content-Security-Policy',
+                    value: " 'self'; 'self' 'unsafe-inline' style-src 'self' 'unsafe-inline';",
+                  },
             {
                 key: 'Referrer-Policy',
                 value: 'origin-when-cross-origin',
@@ -24,7 +24,7 @@ const nextConfig = {
               },
               {
                 key: 'X-Frame-Options',
-                value: 'SAMEORIGIN',
+                value: 'DENY',
               },
               {
                 key: 'X-XSS-Protection',
