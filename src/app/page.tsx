@@ -11,7 +11,7 @@ type Country = 'US' | 'IN';
 export default function Home() {
  // Define a type for the valid country keys
  // Add more countries as needed
-  const [country, setCountry] = useState<Country>('IN'); // Default country
+  const [country, setCountry] = useState<Country>('US'); // Default country
 
   useEffect(() => {
     // Create a function to get the user's IP address
@@ -34,14 +34,14 @@ export default function Home() {
   const pricing: Record<Country, { beginner: string; business: string; exclusive: string }> = {
     US: {
       beginner: 'Free Trial',
-      business: '249$',
-      exclusive: '499$',
+      business: '199$',
+      exclusive: '249$',
     },
 
     IN: {
       beginner: 'Free Trial',
       business: '₹9,999',
-      exclusive: '₹15,000',
+      exclusive: '₹14,999',
     }
     // Add pricing for other countries as needed
     // Example:
