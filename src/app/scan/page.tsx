@@ -13,7 +13,6 @@ export default function Scan() {
   const [loading, setLoading] = useState(false);
   const apiKey = 'https://bbu-security-api.onrender.com/scan_all_vulnerabilities?url=';
 
-
   const handleScan = async () => {
     // Check if the URL starts with "http://" or "https://"
     const urlRegex = /^(https?:\/\/)/;
