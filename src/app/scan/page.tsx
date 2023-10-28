@@ -10,8 +10,9 @@ export default function Scan() {
   const [websiteUrl, setWebsiteUrl] = useState('');
   const [scanResult, setScanResult] = useState(null);
   const [error, setError] = useState<string | null>(null); // Define as string | null
-  const [subscribed, setSubscribed] = useState(false);
   const [loading, setLoading] = useState(false);
+  const apiKey = 'https://bbu-security-api.onrender.com/scan_all_vulnerabilities?url=';
+
 
   const handleScan = async () => {
     // Check if the URL starts with "http://" or "https://"
@@ -23,7 +24,7 @@ export default function Scan() {
 
     try {
       setLoading(true);
-      const response = await fetch(process.env.SCANNER_API + websiteUrl);
+      const response = await fetch(apiKey + websiteUrl);
       if (response.ok) {
         const data = await response.json();
         setScanResult(data);
@@ -161,15 +162,20 @@ export default function Scan() {
             <div className="col-lg-6 col-md-6 col-sm-12 mb-md-0 mb-4 text-md-left text-center">
               <div className="home-banner-text" data-aos="fade-up">
                 <h5 className="text-white artificial-text">
-                  Cyber Security Solutions for
+                  Cyber Security Solutions for 
                 </h5>
+                
                 <h1 className="text-white">
-                  {" "}
                   Organizations with Critical Infrastructure
+                  
                 </h1>
                 <p className="text-white banner-paragraph">
-                The scanner Scope is too small. Don&apos;t use it for professional audit&apos;s.
+                  The scanner Scope is too small. Don&apos;t use it for professional audit&apos;s.
+                  <a className="position-absolute top-0 end-0 bg-dark text-light p-2 rounded small" style={{ boxShadow: '0 0 5px rgba(255, 255, 255, 0.5)', textDecoration: 'none', marginLeft: '10px' }}>
+                    BETA
+                  </a>                
                 </p>
+
 
 
 {/* Scanner Box */}
@@ -186,6 +192,7 @@ export default function Scan() {
             />
             <button
               className="btn btn-outline-secondary"
+              style={{marginLeft: '10px'}}
               type="button"
               id="button-addon"
               onClick={handleScan}
