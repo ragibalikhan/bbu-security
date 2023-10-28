@@ -11,7 +11,7 @@ export default function Scan() {
   const [scanResult, setScanResult] = useState(null);
   const [error, setError] = useState<string | null>(null); // Define as string | null
   const [loading, setLoading] = useState(false);
-  const apiKey = process.env.NEXT_PUBLIC_SCANNER_API;
+  const apiKey = 'https://bbu-security-api.onrender.com/scan_all_vulnerabilities?url=';
 
   const handleScan = async () => {
     // Check if the URL starts with "http://" or "https://"
