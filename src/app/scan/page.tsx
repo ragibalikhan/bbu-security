@@ -23,7 +23,7 @@ export default function Scan() {
 
     try {
       setLoading(true);
-      const response = await fetch(apikey + websiteUrl);
+      const response = await fetch(apiKey + websiteUrl);
       if (response.ok) {
         const data = await response.json();
         setScanResult(data);
