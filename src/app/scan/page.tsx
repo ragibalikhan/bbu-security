@@ -10,8 +10,8 @@ export default function Scan() {
   const [websiteUrl, setWebsiteUrl] = useState('');
   const [scanResult, setScanResult] = useState(null);
   const [error, setError] = useState<string | null>(null); // Define as string | null
-  const [subscribed, setSubscribed] = useState(false);
   const [loading, setLoading] = useState(false);
+  const apiKey = process.env.NEXT_PUBLIC_SCANNER_API;
 
   const handleScan = async () => {
     // Check if the URL starts with "http://" or "https://"
@@ -23,7 +23,7 @@ export default function Scan() {
 
     try {
       setLoading(true);
-      const response = await fetch(process.env.SCANNER_API + websiteUrl);
+      const response = await fetch(apikey + websiteUrl);
       if (response.ok) {
         const data = await response.json();
         setScanResult(data);
