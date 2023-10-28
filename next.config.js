@@ -82,10 +82,6 @@ const nextConfig = {
         ];
       },
 
-      env: {
-        SCANNER_API: process.env.SCANNER_API,
-      },
-
     };
 
 module.exports = nextConfig
