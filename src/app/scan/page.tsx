@@ -2,7 +2,6 @@
 
 import React, { useState } from 'react';
 import Script from 'next/script'
-import Head from 'next/head'
 import ScanResultComponent from '@/Componnets/ScanResult';
 import logo from '../logo.png'
 import Image from 'next/image';
@@ -24,7 +23,7 @@ export default function Scan() {
 
     try {
       setLoading(true);
-      const response = await fetch('https://bbu-security-api.onrender.com/scan_all_vulnerabilities?url=' + websiteUrl);
+      const response = await fetch(process.env.SCANNER_API + websiteUrl);
       if (response.ok) {
         const data = await response.json();
         setScanResult(data);

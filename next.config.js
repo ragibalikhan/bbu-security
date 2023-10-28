@@ -8,7 +8,7 @@ const nextConfig = {
                 headers: [
                     {
                         key: 'Content-Security-Policy',
-                        value: " 'self'; 'self' 'unsafe-inline' style-src 'self' 'unsafe-inline';",
+                        value: " 'self'; 'unsafe-inline' style-src 'self' 'unsafe-inline';",
                       },
                 {
                     key: 'Referrer-Policy',
@@ -46,7 +46,7 @@ const nextConfig = {
             headers: [
                 {
                     key: 'Content-Security-Policy',
-                    value: " 'self'; 'self' 'unsafe-inline' style-src 'self' 'unsafe-inline';",
+                    value: " 'self'; 'unsafe-inline' style-src 'self' 'unsafe-inline';",
                   },
             {
                 key: 'Referrer-Policy',
@@ -81,6 +81,11 @@ const nextConfig = {
           },
         ];
       },
+
+      env: {
+        SCANNER_API: process.env.SCANNER_API,
+      },
+
     };
 
 module.exports = nextConfig
